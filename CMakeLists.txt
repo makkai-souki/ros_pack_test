@@ -9,6 +9,7 @@ project(sample_py)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   rospy
+  geometry_msgs
   std_msgs
   message_generation
 )
@@ -50,6 +51,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   sample_message.msg
+  dso_message.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -69,6 +71,7 @@ add_message_files(
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
   DEPENDENCIES
+  geometry_msgs
   std_msgs
 )
 

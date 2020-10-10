@@ -1,2 +1,2 @@
 string message
-uint32 
+uint32 count
